@@ -21,20 +21,16 @@ import static java.lang.Integer.*;
  */
 public class App {
     public static  void main(String[] args) {
-       App.ifElseExamples(9);
+       int a = App.ifElseExamples(9, 9);
     }
-    public static void ifElseExamples(int x) {
-    	if (x > 10) {
-    		System.out.println("x > 10");
+    public static int ifElseExamples(int a, int b) {
+    	if (a > b) {
+    		return a + b;
+    	} else if (a < b) {
+    		return a - b;
     	} else {
-    		System.out.println("There's nothing to be true.");
+    		return a / b;
     	}
-
-    	if (x < 10) {
-    		System.out.println("x < 10");
-    	}
-
-    	System.out.println("No entry to if-else statements.");
     }
 
 }
